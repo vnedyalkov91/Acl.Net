@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "53ff215f-a2fe-48f5-913c-21ee752abf83": {
+      "ProjectGuid": "53ff215f-a2fe-48f5-913c-21ee752abf83",
+      "DisplayName": "Acl.Net",
+      "ColorIndex": 0
+    },
+    "e21c70c2-2259-4d25-8280-7f203856317c": {
+      "ProjectGuid": "e21c70c2-2259-4d25-8280-7f203856317c",
+      "DisplayName": "Acl.Net.Tests",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "cb64fc30-2951-45f9-a166-02027415eaf5": {
+      "ProjectGuid": "cb64fc30-2951-45f9-a166-02027415eaf5",
+      "DisplayName": "Acl.Net.Debug",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

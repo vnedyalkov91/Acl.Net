@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>Access control lists for .Net applications</Description>
+    <Copyright>Vasil Nedyalkov</Copyright>
+    <RepositoryUrl>https://github.com/vnedyalkov91/Acl.Net.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Acl, dotNet, .net, .net code, c#</PackageTags>
+    <PackageLicenseFile>C:\Users\vnedyalkov\Desktop\Acl.Net\LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.14.0" />
+  </ItemGroup>
+
+</Project>

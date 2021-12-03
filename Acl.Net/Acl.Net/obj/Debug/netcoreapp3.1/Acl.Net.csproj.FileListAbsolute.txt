@@ -1,0 +1,10 @@
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\bin\Debug\netcoreapp3.1\Acl.Net.deps.json
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\bin\Debug\netcoreapp3.1\Acl.Net.dll
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\bin\Debug\netcoreapp3.1\Acl.Net.pdb
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\obj\Debug\netcoreapp3.1\Acl.Net.csproj.AssemblyReference.cache
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\obj\Debug\netcoreapp3.1\Acl.Net.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\obj\Debug\netcoreapp3.1\Acl.Net.AssemblyInfoInputs.cache
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\obj\Debug\netcoreapp3.1\Acl.Net.AssemblyInfo.cs
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\obj\Debug\netcoreapp3.1\Acl.Net.csproj.CoreCompileInputs.cache
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\obj\Debug\netcoreapp3.1\Acl.Net.dll
+C:\Users\vnedyalkov\Desktop\github\Acl.Net\Acl.Net\obj\Debug\netcoreapp3.1\Acl.Net.pdb
