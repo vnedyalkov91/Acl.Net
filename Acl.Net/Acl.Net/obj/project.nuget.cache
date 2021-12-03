@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ywfQvnqZfBgHQ61kk133q8t1w7/KQAY+MH2K6RiOfGdfCHAbsqX23ewAvHQ01SvIP0il7LEdkEIOrdyeeaO0Bg==",
+  "dgSpecHash": "wue2wrxqFeRhOSmV9HxOgIZBciD0zbYlM3VMiozliPjUVq6tNmfdEFiqGmKoe8pUnhkvcKiCLx6ejOExbn1NJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj",
+  "projectFilePath": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vnedyalkov\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\vnedyalkov\\.nuget\\packages\\mongodb.bson\\2.14.0\\mongodb.bson.2.14.0.nupkg.sha512",

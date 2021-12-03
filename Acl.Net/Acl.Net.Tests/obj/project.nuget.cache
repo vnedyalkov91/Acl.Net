@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XQ6az7TueSJKCOv3WS14eVaJ6AceDz0yGnOWvxx6ibR4c3Su5nelckC61NO7J8CXcvZPOt6bUlmbidS2iV7T2Q==",
+  "dgSpecHash": "KIIu0uw4WeQIVSwNnXgwpq2rjJOaR2FBCO504zUGZc3YSi38gdSVD1uyesKuo+3TVZoWEiHdhLEm631ozPMlRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net.Tests\\Acl.Net.Tests.csproj",
+  "projectFilePath": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net.Tests\\Acl.Net.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vnedyalkov\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\vnedyalkov\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

@@ -4989,11 +4989,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net.Tests\\Acl.Net.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net.Tests\\Acl.Net.Tests.csproj",
       "projectName": "Acl.Net.Tests",
-      "projectPath": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net.Tests\\Acl.Net.Tests.csproj",
+      "projectPath": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net.Tests\\Acl.Net.Tests.csproj",
       "packagesPath": "C:\\Users\\vnedyalkov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net.Tests\\obj\\",
+      "outputPath": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5013,8 +5013,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj": {
-              "projectPath": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj"
+            "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj": {
+              "projectPath": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj"
             }
           }
         }

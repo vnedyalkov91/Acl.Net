@@ -395,11 +395,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj",
+      "projectUniqueName": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj",
       "projectName": "Acl.Net",
-      "projectPath": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj",
+      "projectPath": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net\\Acl.Net.csproj",
       "packagesPath": "C:\\Users\\vnedyalkov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vnedyalkov\\Desktop\\Acl.Net\\Acl.Net\\Acl.Net\\obj\\",
+      "outputPath": "C:\\Users\\vnedyalkov\\Desktop\\github\\Acl.Net\\Acl.Net\\Acl.Net\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
