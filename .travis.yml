@@ -1,0 +1,12 @@
+language: csharp
+solution: Acl.Net.sln
+
+install:
+  - nuget restore Acl.Net.sln
+  
+script:
+  - dotnet restore
+  - dotnet test
+ 
+ services:
+  - mongodb
