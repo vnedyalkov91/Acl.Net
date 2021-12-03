@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -19,15 +18,15 @@ jobs:
       with:
         dotnet-version: 5.0.x
         
-    - name: Start MongoDB
-      uses: supercharge/mongodb-github-action@1.7.0
-      with:
-        mongodb-version: ${{ matrix.mongodb-version }}
-    
     - name: Restore dependencies
       run:  |
           cd Acl.Net
           dotnet restore
+          
+    - name: Start MongoDB
+      uses: supercharge/mongodb-github-action@1.7.0
+      with:
+        mongodb-version: ${{ matrix.mongodb-version }}
     
     - name: Test
       run: |
