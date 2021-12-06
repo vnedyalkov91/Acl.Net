@@ -1,7 +1,7 @@
-name: Run Tests Acl.Net
+name: Tests Acl.Net
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
 jobs:
