@@ -1,5 +1,5 @@
 # Acl.Net - Access Control Lists for .Net Core
-[![Run Tests Acl.Net](https://github.com/vnedyalkov91/Acl.Net/actions/workflows/dotnet.yml/badge.svg)](https://github.com/vnedyalkov91/Acl.Net/actions/workflows/dotnet.yml)
+[![Run Tests Acl.Net](https://github.com/vnedyalkov91/Acl.Net/actions/workflows/dotnet.yml/badge.svg)](https://github.com/vnedyalkov91/Acl.Net/actions/workflows/dotnet.yml) [![CodeQL](https://github.com/vnedyalkov91/Acl.Net/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/vnedyalkov91/Acl.Net/actions/workflows/codeql-analysis.yml)
 
 This module provides a minimalistic ACL implementation
 
