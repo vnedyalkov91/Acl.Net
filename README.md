@@ -18,6 +18,11 @@ A MongoDB based backends are provided built-in in the module for now, will be ad
 ## Usage
 The module provides very simple usage and flexibility in order to be extended.
 
+```
+IBackend backend = new Mongodb(IMongoClient client, string databaseName, string prefix);
+IAcl acl = new Acl(backend);
+```
+
 ### Backend
 
 The backend can be initialized like in this example, by passing IMongoClient and database name, as well as prefix for the collection.
@@ -32,7 +37,6 @@ prefix { string } - optional database prefix. By default 'Acl'
 
 ```
 IBackend backend = new Mongodb(IMongoClient client, string databaseName, string prefix);
-IAcl acl = new Acl(backend);
 ```
 
 #### **Devs**
