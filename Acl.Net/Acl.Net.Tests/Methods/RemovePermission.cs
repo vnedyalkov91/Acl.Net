@@ -35,6 +35,9 @@ namespace Acl.Net.Tests.Methods
             }
 
             _acl.RemovePermission("View");
+
+            bool isAllowed = _acl.IsRoleAllowed(roleName + '_' + 1, "Remove_Permission_Test", "View");
+            Assert.AreEqual(isAllowed, false);
         }
     }
 }

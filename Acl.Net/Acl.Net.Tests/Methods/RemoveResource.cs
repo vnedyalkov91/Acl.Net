@@ -34,7 +34,10 @@ namespace Acl.Net.Tests.Methods
                 });
             }
 
-            _acl.RemoveResource(rnd.Next(0, 9999).ToString());
+            _acl.RemoveResource("Remove_Resource_Test");
+
+            bool isAllowed =_acl.IsRoleAllowed(roleName + '_' + 1, "Remove_Resource_Test", "Create");
+            Assert.AreEqual(isAllowed, false);
         }
     }
 }
