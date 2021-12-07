@@ -1,21 +1,30 @@
 ﻿using Acl.Net.Entities;
 using Acl.Net.Interfaces;
+using System;
+using System.Linq;
 
 namespace Acl.Net.Backends
 {
     public abstract class Backend: IBackend
     {
-        private readonly string _prefix;
-        private readonly string _databaseName;
-
-        public Backend(string databaseName, string prefix = "acl")
+        public Role AddRoleParents(Role role, string[] parents)
         {
-            this._prefix = prefix;
-            this._databaseName = databaseName;
+            role.Parents = Utils.RemoveDuplicates<string>(
+                    Utils.JoinArray<string>(role.Parents, parents)
+                );
+
+            return role;
         }
 
-        public abstract Role AddRoleParents(Role role, string[] parents);
-        public abstract Role RemoveRoleParents(Role role, string[] parents);
+        public Role RemoveRoleParents(Role role, string[] parents)
+        {
+            role.Parents = role.Parents.Where(
+                    p => !Array.Exists(parents, pe => pe == p)
+                ).ToArray();
+
+            return role;
+        }
+
         public abstract void DeletePermission(string permissionName);
         public abstract void DeleteResource(string resourceName);
         public abstract void DeleteRole(Role role);

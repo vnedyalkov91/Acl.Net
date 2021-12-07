@@ -18,30 +18,13 @@ namespace Acl.Net.Backends
         private readonly UpdateDefinitionBuilder<Role> roleUpdateBuilder = Builders<Role>.Update;
         private readonly UpdateDefinitionBuilder<User> userUpdateBuilder = Builders<User>.Update;
 
-        public Mongodb(IMongoClient client, string databaseName, string prefix = "acl") : base(databaseName, prefix)
+        public Mongodb(IMongoClient client, string databaseName, string prefix = "acl")
         {
             IMongoDatabase database = client.GetDatabase(databaseName);
             this.roleCollection = database.GetCollection<Role>(prefix + roleCollectionName);
             this.userCollection = database.GetCollection<User>(prefix + userCollectionName);
         }
 
-        public override Role AddRoleParents(Role role, string[] parents)
-        {
-            role.Parents = Utils.RemoveDuplicates<string>(
-                    Utils.JoinArray<string>(role.Parents, parents)
-                );
-
-            return role;
-        }
-
-        public override Role RemoveRoleParents(Role role, string[] parents)
-        {
-            role.Parents = role.Parents.Where(
-                    p => !Array.Exists(parents, pe => pe == p)
-                ).ToArray();
-
-            return role;
-        }
 
         public override void DeleteResource(string resourceName)
         {
