@@ -1,5 +1,4 @@
-﻿using Acl.Net.Interfaces;
-using System;
+﻿using System;
 
 namespace Acl.Net.Entities
 {

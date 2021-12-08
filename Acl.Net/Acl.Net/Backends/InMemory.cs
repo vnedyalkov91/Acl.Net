@@ -8,7 +8,6 @@ namespace Acl.Net.Backends
 {
     public class InMemory : Backend
     {
-
         private List<Role> _roleStorage;
         private List<User> _userStorage;
 

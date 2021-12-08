@@ -45,7 +45,11 @@
           "dependencies": {
             "MongoDB.Driver": {
               "target": "Package",
-              "version": "[2.14.0, )"
+              "version": "[2.14.1, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.2.88, )"
             }
           },
           "imports": [

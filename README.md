@@ -32,6 +32,7 @@ By default the prefix is Acl, so collection(s) that contain the persistance will
 
 - [Mongodb](#mongodb)
 - [In Memory](#inmemory)
+- [Redis](#redis)
 
 #### **Mongodb**
 
@@ -53,6 +54,16 @@ Provides in memory persistance, which means that information will be kept as lon
 
 ```
 IBackend backend = new InMemory();
+```
+
+
+#### **Redis**
+
+Provides persistance into redis database.
+
+```
+ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(url);
+IBackend backend = new Redisdb(ConnectionMultiplexer redis, number databaseIndex);
 ```
 
 #### **Devs**
