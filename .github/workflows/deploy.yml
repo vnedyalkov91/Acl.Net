@@ -7,6 +7,7 @@ on:
 env:
   PROJECT_PATH: "Acl.Net/Acl.Net/Acl.Net.csproj"
   OUTPUT_PATH: ${{ github.workspace }}\output
+  GITHUB_PATH: "https://github.com/vnedyalkov91/Acl.Net"
 
 jobs:
   deploy:
@@ -32,9 +33,13 @@ jobs:
     - name: Build
       run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
 
+    # Get Version
     - name: Get Version
       id: get_version
       uses: battila7/get-version-action@v2
+
+    - name: Add Source
+     run: dotnet nuget add source --username vnedyalkov91 --password ${{ secrets.GITHUBTOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/vnedyalkov91/index.json"
 
     # Package
     - name: Package
@@ -42,4 +47,4 @@ jobs:
 
     # Push
     - name: Push
-      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg -k ${{ secrets.GITHUBDEPLOYERKEY }} --source "github"
+      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg -k ${{ secrets.GITHUBDEPLOYERKEY }} --api-key ${{ env.GITHUB_PATH }} --source "github"
