@@ -1,8 +1,8 @@
 name: Deploy to NuGet
 
 on:
-  push:
-    branches: [ main ]
+  release:
+    types: [published]
 
 env:
   PROJECT_PATH: "Acl.Net/Acl.Net/Acl.Net.csproj"
@@ -15,7 +15,6 @@ jobs:
     runs-on: windows-latest
 
     steps:
-
     # Checkout the repo
     - name: Checkout
       uses: actions/checkout@v2
@@ -34,9 +33,13 @@ jobs:
     - name: Build
       run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
 
+    - name: Get Version
+      id: get_version
+      uses: battila7/get-version-action@v2
+
     # Package
     - name: Package
-      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -- output ${{ env.OUTPUT_PATH }}
+      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=${{ steps.get_version.outputs.version-without-v }} --output ${{ env.OUTPUT_PATH }}
 
     # Push
     - name: Push
