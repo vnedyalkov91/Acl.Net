@@ -1,0 +1,43 @@
+name: Deploy to NuGet
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  PROJECT_PATH: "Acl.Net/Acl.Net/Acl.Net.csproj"
+  OUTPUT_PATH: ${{ github.workspace }}\output
+  NUGET_SOURCE_URL: "'https://api.nuget.org/v3/index.json'"
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: windows-latest
+
+    steps:
+
+    # Checkout the repo
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Setup .Net version 3.1.x
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+
+    # Restore dependencies
+    - name: Restore dependencies
+      run: dotnet restore ${{ env.PROJECT_PATH }}
+
+    # Build
+    - name: Build
+      run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
+
+    # Package
+    - name: Package
+      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -- output ${{ env.OUTPUT_PATH }}
+
+    # Push
+    - name: Push
+      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg -k ${{ secrets.GITHUBDEPLOYERKEY }} -s ${{ env.NUGET_SOURCE_URL }}
