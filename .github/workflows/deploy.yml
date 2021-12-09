@@ -48,4 +48,4 @@ jobs:
 
     # Push
     - name: Push
-      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg -k ${{ secrets.GITHUBDEPLOYERKEY }} --api-key ${{ secrets.GITHUBTOKEN }} --source "github"
+      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg --api-key ${{ secrets.GITHUBTOKEN }} --source "github"
