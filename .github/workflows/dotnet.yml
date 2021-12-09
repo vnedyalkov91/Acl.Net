@@ -38,4 +38,4 @@ jobs:
     - name: Test
       run: |
           cd Acl.Net
-          dotnet test --no-build --verbosity normal
+          dotnet test --verbosity normal
