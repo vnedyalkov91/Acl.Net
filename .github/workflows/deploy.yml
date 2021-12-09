@@ -44,8 +44,13 @@ jobs:
 
     # Package
     - name: Package
-      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=${{ steps.get_version.outputs.version-without-v }} --output ${{ env.OUTPUT_PATH }}
+      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --no-build --configuration Release -p:PackageVersion=${{ steps.get_version.outputs.version-without-v }} --output ${{ env.OUTPUT_PATH }}
 
     # Push
-    - name: Push
-      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg --api-key ${{ secrets.GITHUBTOKEN }} --source "github"
+    - name: Push to Github
+      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg --api-key ${{ secrets.GITHUBTOKEN }} --source "github" --skip-duplicate
+
+    # Push
+    - name: Push to NuGet
+      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg -k ${{ secrets.GITHUBDEPLOYERKEY }} --skip-duplicate
+
