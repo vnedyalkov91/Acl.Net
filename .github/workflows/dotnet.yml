@@ -30,10 +30,10 @@ jobs:
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
     
-    - name: Start Redis  
-      uses: mihai-dinculescu/redis-action@v1.2.0
+    - name: Start Redis
+      uses: supercharge/redis-github-action@1.2.0
       with:
-        redis version: "latest"
+        redis-version: 6
     
     - name: Test
       run: |
