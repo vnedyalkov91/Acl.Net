@@ -32,7 +32,12 @@ jobs:
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
     
+    - name: Start Redis
+      uses: supercharge/redis-github-action@1.2.0
+      with:
+        redis-version: 6
+    
     - name: Test
       run: |
           cd Acl.Net
-          dotnet test --no-build --verbosity normal
+          dotnet test --verbosity normal
