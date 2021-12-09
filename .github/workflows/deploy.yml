@@ -38,8 +38,9 @@ jobs:
       id: get_version
       uses: battila7/get-version-action@v2
 
+    # Add source
     - name: Add Source
-     run: dotnet nuget add source --username vnedyalkov91 --password ${{ secrets.GITHUBTOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/vnedyalkov91/index.json"
+      run: dotnet nuget add source --username vnedyalkov91 --password ${{ secrets.GITHUBTOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/vnedyalkov91/index.json"
 
     # Package
     - name: Package
