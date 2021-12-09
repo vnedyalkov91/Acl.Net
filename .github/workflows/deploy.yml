@@ -8,6 +8,7 @@ env:
   PROJECT_PATH: "Acl.Net/Acl.Net/Acl.Net.csproj"
   OUTPUT_PATH: ${{ github.workspace }}\output
   GITHUB_PATH: "https://github.com/vnedyalkov91/Acl.Net"
+  NUGET_SOURCE_URL: "'https://api.nuget.org/v3/index.json'"
 
 jobs:
   deploy:
@@ -52,5 +53,5 @@ jobs:
 
     # Push
     - name: Push to NuGet
-      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg -k ${{ secrets.GITHUBDEPLOYERKEY }} --skip-duplicate
+      run: dotnet nuget push ${{ env.OUTPUT_PATH }}\*.nupkg -k ${{ secrets.GITHUBDEPLOYERKEY }} -s ${{ env.NUGET_SOURCE_URL }} --skip-duplicate
 
