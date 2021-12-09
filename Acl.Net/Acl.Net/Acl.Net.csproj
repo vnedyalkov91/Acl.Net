@@ -7,7 +7,7 @@
     <RepositoryUrl>https://github.com/vnedyalkov91/Acl.Net.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Acl, dotNet, .net, .net code, c#</PackageTags>
-    <PackageLicenseFile>C:\Users\vnedyalkov\Desktop\Acl.Net\LICENSE</PackageLicenseFile>
+    <PackageLicenseFile>https://raw.githubusercontent.com/vnedyalkov91/Acl.Net/main/LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Company></Company>
     <Authors>Vasil Nedyalkov</Authors>
